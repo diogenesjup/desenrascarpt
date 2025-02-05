@@ -12,13 +12,14 @@ class App {
         this.models  = new Models();
         this.helpers = new Helpers();
 
-        
+   
 
+        
         if(ambiente=="HOMOLOGACAO"){
              
-            this.urlDom = "https://servidorseguro.cloud/resolva-ja/app/www/";
-            this.urlApi = "https://servidorseguro.cloud/resolva-ja/apiservicekeys/";
-            this.urlCdn = "https://servidorseguro.cloud/resolva-ja/cdn/";
+            this.urlDom = "https://servidorseguro.cloud/desenrascarpt/app/www/";
+            this.urlApi = "https://servidorseguro.cloud/desenrascarpt/apiservicekeys/";
+            this.urlCdn = "https://servidorseguro.cloud/desenrascarpt/cdn/";
 
         }
         if(ambiente=="PRODUCAO"){
@@ -29,7 +30,7 @@ class App {
 
         }
 
-        this.urlApiPagto = "https://resolvaja.tec.br/pay/";
+        this.urlApiPagto = "https://servidorseguro.cloud/desenrascarpt/";
 
         this.token = token;
         this.tokenSms = tokenSms;
@@ -257,7 +258,7 @@ class App {
 
         app.views._content.append(`
                 <p style="text-align:center;font-size:11px;padding-top:20px;">
-                    <a href="javascript:void(0)" onclick="app.opcoesCarretamentoPerfilCliente();" title="VOLTAR AO INÍCNIO" style="color:#747474;text-decoration:none;">VOLTAR AO INÍCIO</a>
+                    <a href="javascript:void(0)" onclick="app.opcoesCarretamentoPerfilCliente();" title="VOLTAR AO INÍCIO" style="color:#747474;text-decoration:none;">VOLTAR AO INÍCIO</a>
                 </p>
         `);
 
@@ -437,13 +438,13 @@ filtrotabela(){
         
         }else{
 
-            confirmacao("Tem certeza que deseja desbloquear esse anúncio?",`Será debitado um valor de ${valorAnuncio} MOEDAS do seu saldo <b>RESOLVA JÁ</b>`,`app.views.viewDetalheAnuncio(${anuncio},5)`,"Desbloquear");
+            confirmacao("Tem certeza que deseja desbloquear esse anúncio?",`Será debitado um valor de ${valorAnuncio} MOEDAS do seu saldo <b>${app.appName}</b>`,`app.views.viewDetalheAnuncio(${anuncio},5)`,"Desbloquear");
 
         }
 
     }else{
 
-          aviso("Oops! Você não pode atender a esse orçamento","Suas categorias de atendimento não permitem atender a esse tipo de orçamento. Para alterar as suas categorias de atendimento, envie um e-mail para <b>suporte@resolvaja.tec.br</b>");  
+          aviso("Oops! Você não pode atender a esse orçamento","Suas categorias de atendimento não permitem atender a esse tipo de orçamento. Para alterar as suas categorias de atendimento, envie um e-mail para <b>suporte@servidorseguro.cloud</b>");  
 
     }
         

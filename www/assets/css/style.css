@@ -96,11 +96,11 @@ label{
     font-weight: normal;
     height: 45px;
     padding-top: 2px;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    background: #ffe602 !important;
-    border-color: #ffe602 !important;
+    background: #009247 !important;
+    border-color: #009247 !important;
 }
 
 .btn-default,
@@ -212,17 +212,21 @@ footer .menu-2{
 }
 footer .menu-2 img{
   display: block;
-    margin-left: auto;
-    /* margin-right: auto; */
-    margin-top: -47px;
-    margin-bottom: -3px;
-    width: 60px;
-    max-width: 100px;
-    left: 50%;
-    height: auto;
-    position: absolute;
-    margin-left: -30px;
-    top: 0;
+  margin-left: auto;
+  /* margin-right: auto; */
+  margin-top: -37px;
+  margin-bottom: -3px;
+  width: 60px;
+  height: 60px;
+  max-width: 100px;
+  left: 50%;
+  /* height: auto; */
+  position: absolute;
+  margin-left: -30px;
+  top: 0;
+  background: #fff;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 
@@ -2191,7 +2195,7 @@ p.apoio-servico{
 
 /* Quando o switch está ativado (checkbox checked) */
 .filtro-categorias input:checked + .slider {
-  background-color: #ffe602;
+  background-color: #009247;
 }
 
 .filtro-categorias input:checked + .slider:before {

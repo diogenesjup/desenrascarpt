@@ -34,18 +34,18 @@ class Views{
                            <div class="form-check">
                               <input class="form-check-input" type="radio" name="tipoPerfil" id="tipoServicoCliente" value="cliente" checked>
                               <label class="form-check-label" for="tipoServicoCliente">
-                                <span style="position: relative;display: block;float: left;width: 42px;height: 42px;border-radius: 100%;background: #8666d1;margin-right: 10px;margin-top: -8px;text-align: center;">
-                                    <img src="assets/images/novo-encontro.png" style="filter: invert(1);position: absolute;display: block;left: 0px;top: 4px;width: 96%;" alt="Contratar Serviços" />
-                                </span> Contratar Serviços
+                                <span style="position: relative;display: block;float: left;width: 42px;height: 42px;border-radius: 100%;margin-right: 10px;margin-top: -8px;text-align: center;">
+                                    <img src="assets/images/profile.svg" style="position: absolute;display: block;left: 0px;top: 1px;width: 96%;" alt="Contratar Serviços" />
+                                </span> Encontrar profissionais
                               </label>
                            </div>
 
                            <div class="form-check">
                               <input class="form-check-input" type="radio" name="tipoPerfil" id="tipoServicoPro" value="profissionais">
                               <label class="form-check-label" for="tipoServicoPro">
-                                <span style="position: relative;display: block;float: left;width: 42px;height: 42px;border-radius: 100%;background: #f1b70c;margin-right: 10px;margin-top: -8px;text-align: center;">
-                                 <img src="assets/images/novo-servicoes2.png" alt="Sou um Profissional" style="filter: invert(1);position: absolute;display: block;left: 3px;top: 0px;width: 85%;" />
-                                 </span>  Sou um Profissional
+                                <span style="position: relative;display: block;float: left;width: 42px;height: 42px;border-radius: 100%;margin-right: 10px;margin-top: -8px;text-align: center;">
+                                 <img src="assets/images/simbolo.svg" alt="Cadastrar meus serviços" style="position: absolute;display: block;left: 0px;top: 0px;width: 96%;" />
+                                 </span>  Cadastrar meus serviços
                               </label>
                            </div>
                            
@@ -304,7 +304,7 @@ class Views{
                      
                      <h2>
                        Olá novamente,<br>${localStorage.getItem("nomeCompletoUsuario")}<br>
-                       <small>Novos orçamentos da rede <br>RESOLVA JÁ:</small>
+                       <small>Novos orçamentos da rede <br>${app.appName}:</small>
                      </h2> 
 
                      <div class="filtro-categorias">
@@ -1782,7 +1782,7 @@ class Views{
                                   <p>&nbsp;</p>
 
                                   <p>
-                                    Compartilhe o aplicativo <b>RESOLVA JÁ</b> com seus amigos e contatos 
+                                    Compartilhe o aplicativo <b>${app.appName}</b> com seus amigos e contatos 
                                     e ganhe MOEDAS para desbloquear orçamentos!
                                   </p>
                                   <p>
@@ -1791,11 +1791,11 @@ class Views{
 
                                   <div class="social">
                                       
-                                      <a href="javascript:void(0)" onclick="abrirUrl('https://api.whatsapp.com/send?l=pt_BR&text=Conheça o aplicativo RESOLVA JÁ https://resolvaja.tec.br')" title="Compartilhar por WhatsApp">
+                                      <a href="javascript:void(0)" onclick="abrirUrl('https://api.whatsapp.com/send?l=pt_BR&text=Conheça o aplicativo ${app.appName} ')" title="Compartilhar por WhatsApp">
                                          <i class="fa fa-whatsapp"></i>
                                       </a>
 
-                                      <a href="javascript:void(0)" onclick="abrirUrl('https://www.facebook.com/sharer/sharer.php?u=https://resolvaja.tec.br')" title="Compartilhar no Facebook">
+                                      <a href="javascript:void(0)" onclick="abrirUrl('https://www.facebook.com/sharer/sharer.php?u=')" title="Compartilhar no Facebook">
                                          <i class="fa fa-facebook"></i>
                                       </a>
 
@@ -1980,7 +1980,7 @@ class Views{
 
                                   <p>
                                     Tem alguma dúvida sobre como funciona a plataforma? Veja algumas perguntas e respostas que podem ser úteis. Você também
-                                    pode enviar um e-mail para <b>suporte@resolvaja.tec.br</b>
+                                    pode enviar um e-mail para <b>suporte@servidorseguro.cloud</b>
                                   </p>
                                   
 
@@ -2075,7 +2075,7 @@ class Views{
 
                      <div class="form-group link-apoio text-center">
                             <a href="javascript:void(0)" title="Versão do Aplicativo" style="padding-top:20px;font-size:13px;">
-                               Versão 1.7.5
+                               Versão 1.0.0
                             </a>
                           </div>
                      
@@ -2112,7 +2112,7 @@ class Views{
             
                <div class="row view-login" view-name="view-login">
                   <div class="col-12 wow fadeInRight" data-wow-delay="0.0s" data-wow-duration="0.3s">
-                     <h2>Resolva Já</h2>
+                     <h2>${app.appName}</h2>
                      <p>Insira o código que recebeu por SMS</p>
                      
                      <form method="post" action="javascript:void(0)" onsubmit="app.procVerificarSms(event)">
