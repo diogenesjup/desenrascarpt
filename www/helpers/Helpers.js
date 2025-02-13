@@ -16,7 +16,7 @@ class Helpers {
 
 	    console.log("CARREGANDO MASCARAS DE FORMULÁRIOS");
 
-	    $("#loginUsuario").inputmask("(99) 9 9999-9999");
+	    $("#loginUsuario").inputmask("+351 999 999 999");
 	    $("#codigoSms").inputmask("9 9 9 9 9");
         $("#cadastroCPF").inputmask("999.999.999-99");
 

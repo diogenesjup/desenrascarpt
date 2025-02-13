@@ -2059,7 +2059,7 @@ class Views{
                      
                      <form method="post" action="javascript:void(0)" onsubmit="app.procLoginSms(event)">
                         <div class="form-group">
-                           <label>Seu celular com DDD</label>
+                           <label>Seu celular</label>
                            <input type="tel" class="form-control" id="loginUsuario" placeholder="Digite o número do seu celular" required />
                         </div>
                         
@@ -2075,7 +2075,7 @@ class Views{
 
                      <div class="form-group link-apoio text-center">
                             <a href="javascript:void(0)" title="Versão do Aplicativo" style="padding-top:20px;font-size:13px;">
-                               Versão 1.0.0
+                               Versão 1.2.0
                             </a>
                           </div>
                      
