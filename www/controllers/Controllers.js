@@ -24,13 +24,13 @@ class App {
         }
         if(ambiente=="PRODUCAO"){
 
-            this.urlDom = "https://resolvaja.tec.br/app/www/";
-            this.urlApi = "https://resolvaja.tec.br/apiservicekeys/";
-            this.urlCdn = "https://resolvaja.tec.br/cdn/";
+            this.urlDom = "https://desenrascar.pt/app/www/";
+            this.urlApi = "https://desenrascar.pt/apiservicekeys/";
+            this.urlCdn = "https://desenrascar.pt/cdn/";
 
         }
 
-        this.urlApiPagto = "https://servidorseguro.cloud/desenrascarpt/";
+        this.urlApiPagto = "https://desenrascar.pt/";
 
         this.token = token;
         this.tokenSms = tokenSms;

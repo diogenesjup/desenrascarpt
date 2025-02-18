@@ -2075,7 +2075,7 @@ class Views{
 
                      <div class="form-group link-apoio text-center">
                             <a href="javascript:void(0)" title="Versão do Aplicativo" style="padding-top:20px;font-size:13px;">
-                               Versão 1.2.0
+                               Versão 1.2.2
                             </a>
                           </div>
                      
@@ -2236,8 +2236,8 @@ class Views{
                         </div>
 
                         <div class="form-group">
-                           <label>Seu CPF</label>
-                           <input type="tel" id="cadastroCPF" class="form-control" placeholder="Número do CPF" required />
+                           <label>Seu documento</label>
+                           <input type="tel" id="cadastroCPF" class="form-control" placeholder="Número do seu documento" required />
                         </div>
 
                         <div class="form-group">

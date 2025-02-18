@@ -18,12 +18,12 @@ class Helpers {
 
 	    $("#loginUsuario").inputmask("+351 999 999 999");
 	    $("#codigoSms").inputmask("9 9 9 9 9");
-        $("#cadastroCPF").inputmask("999.999.999-99");
+        //$("#cadastroCPF").inputmask("999.999.999-99");
 
         $("#pagtoCCNumero").inputmask("9999-9999-9999-9999");
         $("#pagtoCCValidade").inputmask("99/99");
-        $("#pagtoBBNumeroCPF").inputmask("999.999.999-99");
-        $("#pagtoCCNumeroCPF").inputmask("999.999.999-99");
+        //$("#pagtoBBNumeroCPF").inputmask("999.999.999-99");
+        //$("#pagtoCCNumeroCPF").inputmask("999.999.999-99");
 
 	}
     

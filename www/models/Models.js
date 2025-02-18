@@ -996,10 +996,10 @@ pacoteChaves(){
                                     <label class="form-check-label" for="pacote${temp}">
                                       <img src="assets/images/simbolo.svg" alt="Comprar ${n.qtd_chaves} Chaves" />  
                                       ${n.qtd_chaves} Moedas 
-                                      <small>À vista por R$ ${n.valor_blr.replace(".",",")}<br>Validade de ${n.validade_dias} dias</small>
+                                      <small>À vista por € ${n.valor_blr.replace(".",",")}<br>Validade de ${n.validade_dias} dias</small>
                                       <span>
                                         <d>ou em até 4X de</d>
-                                        R$ ${resultado.toFixed(2).replace(".",",")}
+                                        € ${resultado.toFixed(2).replace(".",",")}
                                       </span>
                                     </label>
                                  </div>
@@ -1084,10 +1084,10 @@ selecaoPacoteDeChaves(pacoteEscolhido){
                                     <label class="form-check-label" for="pacote1">
                                       <img src="assets/images/simbolo.svg" alt="Comprar ${pacoteEscolhido} Moedas" />  
                                       ${pacoteEscolhido} MOEDAS 
-                                      <small>À vista por R$ ${dados.pacotes[i].valor_blr.replace(".",",")}</small>
+                                      <small>À vista por € ${dados.pacotes[i].valor_blr.replace(".",",")}</small>
                                       <span>
                                         <d>ou em até 4X de</d>
-                                        R$ ${resultado}
+                                        € ${resultado}
                                       </span>
                                     </label>
                                  </div>
@@ -1115,7 +1115,7 @@ selecaoPacoteDeChaves(pacoteEscolhido){
                                   console.log("IMPRMINDO VALORES...");
 
                                   $("#pagtoCCParcelas").append(`
-                                      <option value="${j}">${j}x de R$ ${divisao}</option>
+                                      <option value="${j}">${j}x de € ${divisao}</option>
                                   `);
 
                                 }
@@ -1128,7 +1128,7 @@ selecaoPacoteDeChaves(pacoteEscolhido){
                             if(parseInt(dados.pacotes[i].valor_blr)<=5){
 
                               $("#pagtoCCParcelas").append(`
-                                      <option value="1">1x de R$ ${dados.pacotes[i].valor_blr}</option>
+                                      <option value="1">1x de € ${dados.pacotes[i].valor_blr}</option>
                                   `);
 
                             }
